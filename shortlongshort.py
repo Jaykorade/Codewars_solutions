@@ -11,3 +11,7 @@ For example: (Input1, Input2) --> output
 ShortLongShort.solution("1", "22"); // returns "1221"
 ShortLongShort.solution("22", "1"); // returns '1221'
 """
+
+def solution(a, b):
+    return f"{b}{a}{b}" if len(a) > len(b) else f"{a}{b}{a}" 
+
